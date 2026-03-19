@@ -22,14 +22,15 @@ public class Funcionario {
     @NotBlank(message = "Preencha o nome do funcionário!")
     private String nome;
 
-    @NotNull(message = "Preencha o cargo do funcionário")
-    @Positive(message = "Cargo inválido")
+    @NotBlank (message = "Preencha o cargo do funcionário")
     private String cargo;
 
-    @NotNull(message = "Preencha o Email do funcionário")
+    @NotBlank(message = "Preencha o Email do funcionário")
     private String email;
 
     @NotNull(message = "Preencha o Salário do funcionário")
+    @Positive(message = "Salário inválido")
     private Double salario;
+
     public Funcionario(){}
 }

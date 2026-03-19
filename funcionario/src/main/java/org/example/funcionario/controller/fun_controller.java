@@ -22,7 +22,7 @@ public class fun_controller {
     }
 
     @PostMapping
-    public Funcionario criar(@RequestBody @Valid Funcionario funcionario) {
+    public Funcionario cadastrar(@RequestBody @Valid Funcionario funcionario) {
         return service.salvar(funcionario);
     }
     @GetMapping("/{id}")
